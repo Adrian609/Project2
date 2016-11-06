@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour {
 				continue;
 			state = Rotate (state, rotkey);
 		}
-		if (attacking == false && Input.GetMouseButtonDown (0)) {//this is why I drink, runs half a million times per mouse click
+		if (attacking == false && Input.GetMouseButtonDown (0)) {//this is why I drink, runs half a million times per mouse click. Changed spearY++ to spearY = .8, took way to long to think of that...
 			attacking = true;
 		}
 		SyncState();
